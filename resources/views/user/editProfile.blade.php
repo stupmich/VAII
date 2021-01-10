@@ -2,18 +2,26 @@
 
 @section('content')
     <!DOCTYPE html>
-<div id="container3" style="padding:2%;">
+<div class="card mb-3" style="width: 60%; margin-left: 20%">
+    <div class="card-header">
+        <h2 style="margin-left: 2%; margin-bottom: 0">Edit profile</h2>
+    </div>
     <form method="post" action=" {{ route('user.updateProfile') }} ">
         @csrf
-        <div class="form-group">
+        <div class="form-group" style="margin-left: 5%; margin-right: 5%;margin-top: 2%;margin-bottom: 3%">
+            @if(session('success'))
+                <div class="alert alert-success" role="alert">
+                    {{session('success')}}
+                </div>
+            @endif
             <label>Username</label>
-            <input name="name" type="text" class="form-control" value="{{$user->name}}" required>
+            <input name="name" type="text" class="form-control" value="{{$user->name}}" required style="margin-bottom: 1%">
 
             <label>Email address</label>
-            <input name="email" type="email" class="form-control" value="{{$user->email}}" required>
+            <input name="email" type="email" class="form-control" value="{{$user->email}}" required style="margin-bottom: 1%">
 
             <label>Faction</label>
-            <select name="faction" class="select form-control" required id="faction">
+            <select name="faction" class="select form-control" required id="faction" style="margin-bottom: 1%">
                 <option disabled selected value="">Choose...</option>
                 <option value="Alliance" @if ($user->faction=="Alliance") <?php echo "selected='selected'"; ?>@endif >
                     Alliance
@@ -23,7 +31,7 @@
             </select>
 
             <label>Realm</label>
-            <select name="realm" class="select form-control" required id="id_realm">
+            <select name="realm" class="select form-control" required id="id_realm" style="margin-bottom: 1%">
                 <option disabled selected value="">Choose...</option>
                 <optgroup label="en">
                     <option
@@ -155,11 +163,9 @@
             </select>
 
             <label>About</label>
-            <textarea name="about" class="form-control">{{$user->about}}</textarea>
+            <textarea name="about" class="form-control" style="margin-bottom: 1%">{{$user->about}}</textarea>
 
-            <button type="submit" class="btn btn-primary">Submit</button>
-            <a href="?c=account&a=delete" class="btn btn-danger btn-primary">Delete account</a>
-
+            <button type="submit" class="btn btn-primary" style="width: 100%">Submit</button>
 
         </div>
 

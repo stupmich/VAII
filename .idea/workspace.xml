@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d94b3e62-bed5-4c44-87d8-aabcaa7fb250" name="Default Changelist" comment="" />
+    <list default="true" id="d94b3e62-bed5-4c44-87d8-aabcaa7fb250" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/user/editProfile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/editProfile.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/user/profile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/profile.blade.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,6 +22,9 @@
         <option value="composer.json" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.4">
     <include_path>
@@ -133,6 +141,7 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1mKoEIresRLp89II9GEZC4zdwpf" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -174,6 +183,7 @@
       <workItem from="1609340838936" duration="8539000" />
       <workItem from="1609414430388" duration="2477000" />
       <workItem from="1610205822621" duration="17411000" />
+      <workItem from="1610303082206" duration="4855000" />
     </task>
     <servers />
   </component>
@@ -205,6 +215,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="154" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1609274142512" />
+    <state x="647" y="310" key="Github.ShareDialog" timestamp="1610303117399">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="647" y="310" key="Github.ShareDialog/0.0.1536.824@0.0.1536.824" timestamp="1610303117399" />
+    <state x="487" y="110" key="Github.UntrackedFilesDialog" timestamp="1610303134686">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="487" y="110" key="Github.UntrackedFilesDialog/0.0.1536.824@0.0.1536.824" timestamp="1610303134686" />
     <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1609363777618">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

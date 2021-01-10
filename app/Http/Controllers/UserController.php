@@ -81,9 +81,9 @@ class UserController extends Controller
         $user->save();
 
 
-
-        return view('/user/profile', array('user'=>Auth::user()));
-        session()->flash('succes', 'Profile updated succesfully.');
+        $request->session()->flash('success', 'Profile updated succesfully.');
+       // return view('/user/editProfile', array('user'=>Auth::user()));
+        return redirect()->back();
     }
 
     /**
