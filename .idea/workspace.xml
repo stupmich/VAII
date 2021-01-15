@@ -19,11 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d94b3e62-bed5-4c44-87d8-aabcaa7fb250" name="Default Changelist" comment="ajax">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ArticlesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ArticlesController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/articles/topics.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/articles/topics.blade.php" afterDir="false" />
-    </list>
+    <list default="true" id="d94b3e62-bed5-4c44-87d8-aabcaa7fb250" name="Default Changelist" comment="ajax 2.0" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -208,7 +204,7 @@
       <workItem from="1610478365751" duration="6106000" />
       <workItem from="1610566257849" duration="2820000" />
       <workItem from="1610637202129" duration="13706000" />
-      <workItem from="1610723506612" duration="15163000" />
+      <workItem from="1610723506612" duration="15466000" />
     </task>
     <task id="LOCAL-00001" summary="prerabka toho isteho vol 2">
       <created>1610308299108</created>
@@ -224,7 +220,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610735276301</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="ajax 2.0">
+      <created>1610739727588</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1610739727588</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -245,7 +248,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="prerabka toho isteho vol 2" />
     <MESSAGE value="ajax" />
-    <option name="LAST_COMMIT_MESSAGE" value="ajax" />
+    <MESSAGE value="ajax 2.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="ajax 2.0" />
   </component>
   <component name="WindowStateProjectService">
     <state x="349" y="67" key="#CLI_Interpreters" timestamp="1609251824013">
@@ -304,10 +308,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="604" y="336" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1610726032057" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1610735277876">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1610739731825">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1610735277876" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1610739731825" />
     <state x="668" y="289" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1610216978464">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

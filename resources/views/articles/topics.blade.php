@@ -26,7 +26,6 @@
 <script type="text/javascript">
 
     $(document).ready(function(){
-        //console.log("robim");
         fetchRecords();
     });
 
@@ -36,7 +35,6 @@
             type: 'GET',
             dataType: 'json',
             success: function(response){
-                console.log("kokot");
                 var len = 0;
                 $('#userTable tbody').empty(); // Empty <tbody>
                 if(response['data'] != null){
