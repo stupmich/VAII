@@ -38,22 +38,14 @@ class ArticlesController extends Controller
     }
 
     public function topics() {
-        $articles = Article::all()->toArray();
-        //$articleData['data'] = $articles;
-       // $view = view('/articles/topics');
-       // echo $view;
-
-     //   echo json_encode($articleData);
-
-
-        $articles = Article::all()->toJson();
-        return view('/articles/topics', compact('articles'));
+        $view = view('/articles/topics');
+        echo $view;
     }
 
     public function topicsAjax() {
         $articles = Article::all();
         $articleData['data'] = $articles;
-        //echo json_encode($articleData);
+        echo json_encode($articleData);
         exit;
     }
 }

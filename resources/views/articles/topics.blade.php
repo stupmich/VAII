@@ -26,22 +26,17 @@
 <script type="text/javascript">
 
     $(document).ready(function(){
-        console.log("robim");
-        // Fetch all records
-        $('#link-topics').click(function(){
-
-            fetchRecords();
-        });
+        //console.log("robim");
+        fetchRecords();
     });
 
     function fetchRecords(){
-
         $.ajax({
-            url: '/blog/public/article/topics',
-            type: 'get',
+            url: '<?php echo url('http://localhost/blog/public/article/topicsAjax')?>',
+            type: 'GET',
             dataType: 'json',
             success: function(response){
-
+                console.log("kokot");
                 var len = 0;
                 $('#userTable tbody').empty(); // Empty <tbody>
                 if(response['data'] != null){
