@@ -1,11 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="d94b3e62-bed5-4c44-87d8-aabcaa7fb250" name="Default Changelist" comment="">
+    <list default="true" id="d94b3e62-bed5-4c44-87d8-aabcaa7fb250" name="Default Changelist" comment="prerabka toho isteho vol 2">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ArticlesController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Article.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_01_10_204827_create_articles_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/forum.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/articles/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/articles/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/articles/topics.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/18d39f91-1696-4977-bbd3-94a35323efac.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/18d39f91-1696-4977-bbd3-94a35323efac.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/verify.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/verify.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/menu/classes.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/menu/classes.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/menu/howToStart.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/menu/howToStart.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/menu/lore.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/menu/lore.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/menu/races.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/menu/races.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/user/editProfile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/editProfile.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/user/profile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/profile.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +55,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="composer.json" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -147,6 +183,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mariadb" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -156,6 +193,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\micha\Desktop\php_mysql\www\blog\public\js" />
       <recent name="C:\Users\micha\Desktop\php_mysql\www\blog\resources\views\profile" />
       <recent name="C:\Users\micha\Desktop\php_mysql\www\blog\resources\views" />
       <recent name="C:\Users\micha\Desktop\php_mysql\www\blog\resources\views\menu" />
@@ -183,12 +221,41 @@
       <workItem from="1609340838936" duration="8539000" />
       <workItem from="1609414430388" duration="2477000" />
       <workItem from="1610205822621" duration="17411000" />
-      <workItem from="1610303082206" duration="4855000" />
+      <workItem from="1610303082206" duration="8548000" />
+      <workItem from="1610381760348" duration="6812000" />
+      <workItem from="1610478365751" duration="6106000" />
+      <workItem from="1610566257849" duration="2820000" />
+      <workItem from="1610637202129" duration="13706000" />
+      <workItem from="1610723506612" duration="10971000" />
     </task>
+    <task id="LOCAL-00001" summary="prerabka toho isteho vol 2">
+      <created>1610308299108</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1610308299108</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="prerabka toho isteho vol 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="prerabka toho isteho vol 2" />
   </component>
   <component name="WindowStateProjectService">
     <state x="349" y="67" key="#CLI_Interpreters" timestamp="1609251824013">
@@ -203,6 +270,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="71" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1610217480915" />
+    <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1610641864485">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824@0.0.1536.824" timestamp="1610641864485" />
     <state x="528" y="272" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1610222052437">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -239,10 +310,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1609363777618" />
-    <state x="604" y="336" key="NewPhpFileDialog" timestamp="1610218125691">
+    <state x="604" y="336" key="NewPhpFileDialog" timestamp="1610726032057">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="604" y="336" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1610218125691" />
+    <state x="604" y="336" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1610726032057" />
     <state x="668" y="289" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1610216978464">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -259,9 +330,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="566" y="233" width="403" height="354" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog/0.0.1536.824@0.0.1536.824" timestamp="1610217847946" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1610225932964">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1610642003157">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1610225932964" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1610642003157" />
   </component>
 </project>

@@ -28,8 +28,16 @@ Route::get('/lore', [App\Http\Controllers\MenuController::class, 'lore'])->name(
 
 Route::get('/profile',[App\Http\Controllers\UserController::class, 'profile'])->name('user.profile');
 Route::get('/editProfile',[App\Http\Controllers\UserController::class, 'edit'])->name('user.editProfile');
-
 Route::post('/editProfile',[App\Http\Controllers\UserController::class, 'update'])->name('user.updateProfile');
+
+Route::get('/article/create',[App\Http\Controllers\ArticlesController::class, 'create'])->name('articles.create');
+Route::post('/article',[App\Http\Controllers\ArticlesController::class, 'store'])->name('articles.store');
+
+
+Route::get('/article/index',[App\Http\Controllers\ArticlesController::class, 'index'])->name('articles.index');
+Route::get('/article/topics',[App\Http\Controllers\ArticlesController::class, 'topics'])->name('articles.topics');
+Route::get('/article/topicsAjax',[App\Http\Controllers\ArticlesController::class, 'topicsAjax'])->name('articles.topicsAjax');
+
 
 Route::group(['middleware'=>['auth']],function (){
     Route::resource('user',\App\Http\Controllers\UserController::class);

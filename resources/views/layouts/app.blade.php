@@ -32,9 +32,9 @@
 
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
-                            <a class="navbar-brand" href="?c=home" style="font-size: 1.25rem; line-height: 1.1; color:white; padding: 8px">
+                            <a class="navbar-brand" id="button-forum" href="{{ route('articles.index') }}" style="font-size: 1.25rem; line-height: 1.1; color:white; padding: 8px">
                                 <img src="https://icon-library.com/images/quest-icon/quest-icon-3.jpg" width="10" height="30" class="d-inline-block " alt="" loading="lazy">
-                                NEWS
+                                FORUM
                             </a>
                         </li>
 

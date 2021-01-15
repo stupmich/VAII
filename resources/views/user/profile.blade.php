@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 @extends('layouts.app')
 
 
@@ -21,7 +22,7 @@
                 </div>
             </div>
         </div>
-        <a class="btn btn-primary" href="{{ route('user.editProfile') }}" role="button" style="width: revert">Edit my profile</a>
+        <a class="btn btn-primary" href="{{ route('user.editProfile') }}" role="button" style="width: 100%">Edit my profile</a>
 
     </div>
 
