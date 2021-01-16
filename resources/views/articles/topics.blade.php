@@ -5,20 +5,21 @@
 @section('content')
     <div id="container3">
         <h4>TOPICS</h4>
-        <input type='button' value='Fetch all records' id='but_fetchall'>
-        <table border='1' id='userTable' style='border-collapse: collapse;'>
-            <thead>
+
+        <table id="topicsTable" class="table table-hover">
+            <thead style="border-bottom:solid; border-color: mediumslateblue">
             <tr>
-                <th>S.no</th>
-                <th>Username</th>
-                <th>Name</th>
-                <th>Email</th>
+                <th scope="col"></th>
+                <th scope="col" style="width: 50%">Topic</th>
+                <th scope="col">Author</th>
+                <th scope="col">Date</th>
+
             </tr>
             </thead>
-            <tbody></tbody>
+
+            <tbody>
+            </tbody>
         </table>
-
-
 
     </div>
 @endsection
@@ -30,6 +31,7 @@
     });
 
     function fetchRecords(){
+
         $.ajax({
             url: '<?php echo url('http://localhost/blog/public/article/topicsAjax')?>',
             type: 'GET',
@@ -46,19 +48,29 @@
                     for(var i=0; i<len; i++){
 
                         var title = response['data'][i].title;
+                        var createdAt = response['data'][i].created_at;
+                        var res = createdAt.substring(0, 10);
+                        var author = response['data'][i].username;
+                        var id = response['data'][i].id;
 
-                        var tr_str = "<tr>" +
-                            "<td align='center'>" + title + "</td>" +
+                        var url = '{{ route("articles.topic", ['id' => ':id' ] ) }}';
+                        url = url.replace(':id', id);
+
+                        var tr_str = "<tr style=\"transform: rotate(0);\"> " +
+                            "<th scope=\"row\"><a href=\"" + url +  "\"  class=\"stretched-link\"></a></th>" +
+                            "<td >" + title + "</td>" +
+                            "<td >" + author + "</td>" +
+                            "<td >" + res + "</td>" +
                             "</tr>";
 
-                        $("#userTable tbody").append(tr_str);
+                        $("#topicsTable tbody").append(tr_str);
                     }
                 }else{
                     var tr_str = "<tr>" +
                         "<td align='center' colspan='4'>No record found.</td>" +
                         "</tr>";
 
-                    $("#userTable tbody").append(tr_str);
+                    $("#topicsTable tbody").append(tr_str);
                 }
 
             }

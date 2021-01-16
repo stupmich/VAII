@@ -24,27 +24,41 @@ class ArticlesController extends Controller
         $data = request()->validate([
             'title' => 'required',
             'text' => 'required',
-            'image' => 'required|image'
             ]);
+
         $imagePath = request('image')->store('uploads','public');
+
+        $user = auth()->user();
+        $name = $user->name;
 
         auth()->user()->articles()->create([
             'title' => $data['title'],
             'text' => $data['text'],
-            'image' => $imagePath
+            'image' => $imagePath,
+            'username' => $name
         ]);
         dd(request()->all());
-        //return view('articles/index');
+
     }
 
-    public function topics() {
-        $view = view('/articles/topics');
-        echo $view;
+    public function topics($name) {
+        return view('/articles/topics');
     }
 
     public function topicsAjax() {
         $articles = Article::all();
         $articleData['data'] = $articles;
+        echo json_encode($articleData);
+        exit;
+    }
+
+    public function topic() {
+        return view('/articles/topic');
+    }
+
+    public function topicAjax($id) {
+        $article = Article::all()->where('id', $id);
+        $articleData['data'] = $article;
         echo json_encode($articleData);
         exit;
     }

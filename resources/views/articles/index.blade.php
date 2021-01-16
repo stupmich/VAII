@@ -14,7 +14,7 @@
                     <div class="card-body">
                         <h5 class="card-title">COMMUNITY</h5>
                         <p class="card-text">Discuss World of Warcraft.</p>
-                        <a href="{{ route('articles.topics') }}" class="text-decoration-none" id='link-topics'>General discussion</a>
+                        <a href="{{ route('articles.topics',['name' => 'gen' ] ) }}" class="text-decoration-none" id='link-topics'>General discussion</a>
                     </div>
                 </div>
             </div>
