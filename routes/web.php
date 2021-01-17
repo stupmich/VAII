@@ -30,15 +30,16 @@ Route::get('/profile',[App\Http\Controllers\UserController::class, 'profile'])->
 Route::get('/editProfile',[App\Http\Controllers\UserController::class, 'edit'])->name('user.editProfile');
 Route::post('/editProfile',[App\Http\Controllers\UserController::class, 'update'])->name('user.updateProfile');
 
-Route::get('/article/create',[App\Http\Controllers\ArticlesController::class, 'create'])->name('articles.create');
-Route::post('/article',[App\Http\Controllers\ArticlesController::class, 'store'])->name('articles.store');
+Route::get('/article/create/{category?}/{subcategory?}',[App\Http\Controllers\ArticlesController::class, 'create'])->name('articles.create');
+Route::post('/article/{category?}/{subcategory?}',[App\Http\Controllers\ArticlesController::class, 'store'])->name('articles.store');
 
 
 Route::get('/article/index',[App\Http\Controllers\ArticlesController::class, 'index'])->name('articles.index');
-Route::get('/article/topics/{name?}',[App\Http\Controllers\ArticlesController::class, 'topics'])->name('articles.topics');
+Route::get('/article/topics/{category?}/{subcategory?}',[App\Http\Controllers\ArticlesController::class, 'topics'])->name('articles.topics');
 Route::get('/article/topicsAjax',[App\Http\Controllers\ArticlesController::class, 'topicsAjax'])->name('articles.topicsAjax');
 Route::get('/article/topic/{id?}',[App\Http\Controllers\ArticlesController::class, 'topic'])->name('articles.topic');
 Route::get('/article/topicAjax/{id?}',[App\Http\Controllers\ArticlesController::class, 'topicAjax'])->name('articles.topicAjax');
+Route::get('/article/topicUserAjax/{id?}',[App\Http\Controllers\ArticlesController::class, 'topicUserAjax'])->name('articles.topicUserAjax');
 
 
 Route::group(['middleware'=>['auth']],function (){

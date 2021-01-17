@@ -4,7 +4,17 @@
 
 @section('content')
     <div id="container3">
-        <p id="text"></p>
+
+        <div id="containerForumWrap">
+                <div id="containerForumUser">
+                    <p id="userName"></p>
+                </div>
+                <div id="containerForumText">
+                    <p id="text"></p>
+                </div>
+
+        </div>
+
     </div>
 @endsection
 
@@ -13,55 +23,71 @@
 
     $(document).ready(function(){
         fetchRecords();
+        fetchName();
     });
 
-    function fetchRecords(){
+    function fetchRecords() {
 
         url = window.location.href;
-        var id = url.split("/",8).pop();
-        var urlstr = 'http://localhost/blog/public/article/topicAjax/' + id
+        var id = url.split("/", 8).pop();
+        var urlstr = 'http://localhost/blog/public/article/topicAjax/' + id;
 
+        $.ajax(
+            {
+                url: urlstr,
+                type: 'GET',
+                dataType: 'json',
+                success: function (response) {
+                    $('#text').empty(); // Empty <tbody>
 
-        console.log(url);
-        $.ajax({
-            url: '<?php echo url()?>',
-            type: 'GET',
-            dataType: 'json',
-            success: function(response){
-                var len = 0;
-                $('#text').empty(); // Empty <tbody>
-                if(response['data'] != null){
-
-                    len = response['data'].length;
-                }
-
-                if(len > 0){
-                    for(var i=0; i<len; i++){
-                        var text = response['data'][i].text;
-
-                       // var title = response['data'][i].title;
-                       // var createdAt = response['data'][i].created_at;
-                       // var res = createdAt.substring(0, 10);
-                       // var author = response['data'][i].username;
-                       // var id = response['data'][i].id;
-
-                     //   var url = '{{ route("articles.topic", ['id' => ':id' ] ) }}';
-                      //  url = url.replace(':id', id);
-
+                    if (response['data'] != null) {
+                        var text = response['data'][id-1].text;
                         var tr_str = text;
 
                         $("#text").append(tr_str);
+                    } else {
+                        var tr_str = "<tr>" +
+                            "<td align='center' colspan='4'>No record found.</td>" +
+                            "</tr>";
+
+                        $("#text").append(tr_str);
+
                     }
-                }else{
-                    var tr_str = "<tr>" +
-                        "<td align='center' colspan='4'>No record found.</td>" +
-                        "</tr>";
-
-                    $("#text").append(tr_str);
                 }
+            });
+    }
 
-            }
-        });
+    function fetchName() {
+
+        url = window.location.href;
+        var id = url.split("/", 8).pop();
+        var urlstr = 'http://localhost/blog/public/article/topicUserAjax/' + id;
+        $.ajax(
+            {
+                url: urlstr,
+                type: 'GET',
+                dataType: 'json',
+                success: function (response) {
+                    $('#userName').empty(); // Empty <tbody>
+                    console.log(response['data']);
+                    if (response['data'] != null) {
+                        var text = response['data'].name;
+                        var faction = response['data'].faction;
+                        var realmList = response['data'].realm;
+
+                        var tr_str = text + faction + realmList;
+
+                        $("#userName").append(tr_str);
+                    } else {
+                        var tr_str = "<tr>" +
+                            "<td align='center' colspan='4'>No record found.</td>" +
+                            "</tr>";
+
+                        $("#userName").append(tr_str);
+
+                    }
+                }
+            });
     }
 
 </script>

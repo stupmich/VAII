@@ -5,7 +5,7 @@
         <div class="card-header">
             <h2 style="margin-left: 2%; margin-bottom: 0">Add a new topic</h2>
         </div>
-        <form action="{{route('articles.store') }}" enctype="multipart/form-data" method="post">
+        <form action="{{route('articles.store' ,['category' =>$category, 'subcategory' =>$subcategory ])  }}" enctype="multipart/form-data" method="post">
             @csrf
 
             <div class="form-group" style="margin-left: 5%; margin-right: 5%;margin-top: 2%;margin-bottom: 3%">

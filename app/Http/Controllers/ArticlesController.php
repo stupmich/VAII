@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Article;
+use http\Client\Curl\User;
 use Illuminate\Http\Request;
 
 class ArticlesController extends Controller
@@ -16,11 +17,11 @@ class ArticlesController extends Controller
         $this->middleware('auth');
     }
 
-    public function create() {
-        return view('articles.create');
+    public function create($category, $subcategory) {
+        return view('articles.create', ['category' => $category, 'subcategory' => $subcategory]);
     }
 
-    public function store() {
+    public function store($category, $subcategory) {
         $data = request()->validate([
             'title' => 'required',
             'text' => 'required',
@@ -37,12 +38,11 @@ class ArticlesController extends Controller
             'image' => $imagePath,
             'username' => $name
         ]);
-        dd(request()->all());
-
+        return view('/articles/topics', ['category' => $category, 'subcategory' => $subcategory]);
     }
 
-    public function topics($name) {
-        return view('/articles/topics');
+    public function topics($category, $subcategory) {
+        return view('/articles/topics', ['category' => $category, 'subcategory' => $subcategory]);
     }
 
     public function topicsAjax() {
@@ -53,12 +53,22 @@ class ArticlesController extends Controller
     }
 
     public function topic() {
+
         return view('/articles/topic');
     }
 
     public function topicAjax($id) {
         $article = Article::all()->where('id', $id);
         $articleData['data'] = $article;
+        echo json_encode($articleData);
+        exit;
+    }
+
+    public function topicUserAjax($id) {
+        $article = Article::find($id);
+        $user = $article->user;
+
+        $articleData['data'] = $user;
         echo json_encode($articleData);
         exit;
     }
