@@ -41,6 +41,10 @@ Route::get('/article/topic/{id?}',[App\Http\Controllers\ArticlesController::clas
 Route::get('/article/topicAjax/{id?}',[App\Http\Controllers\ArticlesController::class, 'topicAjax'])->name('articles.topicAjax');
 Route::get('/article/topicUserAjax/{id?}',[App\Http\Controllers\ArticlesController::class, 'topicUserAjax'])->name('articles.topicUserAjax');
 
+Route::post('/article/topic/{articleid?}',[App\Http\Controllers\CommentsController::class, 'send'])->name('comment.send');
+Route::get('/article/commentsAjax/{id?}',[App\Http\Controllers\CommentsController::class, 'commentsAjax'])->name('comment.ajax');
+Route::get('/article/commentsUserAjax/{id?}',[App\Http\Controllers\CommentsController::class, 'commentsUserAjax'])->name('comment.UserAjax');
+
 
 Route::group(['middleware'=>['auth']],function (){
     Route::resource('user',\App\Http\Controllers\UserController::class);

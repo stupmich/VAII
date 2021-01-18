@@ -28,7 +28,6 @@
                 <th scope="col" style="width: 50%">Topic</th>
                 <th scope="col">Author</th>
                 <th scope="col">Date</th>
-
             </tr>
             </thead>
 
