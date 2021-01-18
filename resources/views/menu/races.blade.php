@@ -6,7 +6,7 @@
 
 <div id="container3">
     <div class="container-fluid padding">
-        <div class="col-12 text-center" style="padding-bottom: 3%">
+        <div class="col-12 myHeader" >
             <h1><strong>Denizens of Azeroth</strong></h1>
         </div>
 

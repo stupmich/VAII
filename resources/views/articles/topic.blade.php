@@ -27,37 +27,33 @@
 
         <div class="container">
             <div class="row">
-                <div  id="commentsnames" style="width: 20%;">
+                <div id="commentsnames" style="width: 20%;">
 
                 </div>
-                <div  id="comments" style="width: 80%;" >
+                <div id="comments" style="width: 80%;">
 
                 </div>
             </div>
-
-
         </div>
 
+        @can('store', \App\Models\Comment::class)
+            <div id="containerReplyForum">
+                <h2 style="font-weight: bold;
+        margin-left: 5%;
+        line-height: 1.8;">Reply to topic</h2>
+                <form action="{{route('comment.store' ,['id' => $id])  }}"
+                      enctype="multipart/form-data" method="post">
+                    @csrf
+                    <div class="form-group">
+                                         <textarea class="form-control" id="reply" name="reply"
+                                                   placeholder="Write your reply here..."
+                                                   style="resize: none; height: 200px;width: 90%;margin-left: 5%;margin-right: 5%" required></textarea>
+                        <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 2%">Send</button>
+                    </div>
 
-
-
-
-
-        <div id="containerReplyForum">
-            <h2 style="font-weight: bold;
-    margin-left: 5%;
-    line-height: 1.8;">Reply to topic</h2>
-            <form action="{{route('comment.send' ,['articleid' => 1])  }}"
-                  enctype="multipart/form-data" method="post">
-                @csrf
-                 <div class="form-group">
-                                     <textarea class="form-control" id="reply" name="reply" placeholder="Write your reply here..."
-                                               style="resize: none; height: 200px;width: 90%;margin-left: 5%;margin-right: 5%"></textarea>
-                     <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 2%">Send</button>
-                 </div>
-
-            </form>
-        </div>
+                </form>
+            </div>
+        @endcan
 
 
     </div>
@@ -75,7 +71,6 @@
         fetchRecords();
         fetchCommentNames();
         fetchComments();
-
     }
 
     function fetchRecords() {
@@ -83,7 +78,6 @@
         url = window.location.href;
         var id = url.split("/", 8).pop();
         var urlstr = 'http://localhost/blog/public/article/topicAjax/' + id;
-
         $.ajax(
             {
                 url: urlstr,
@@ -138,17 +132,11 @@
                         $("#faction").append(faction);
                         $("#realmlist").append(realmList);
 
-                    } else {
-                        var tr_str = "<tr>" +
-                            "<td align='center' colspan='4'>No record found.</td>" +
-                            "</tr>";
-
-                        $("#userName").append(tr_str);
-
                     }
                 }
             });
     }
+
     function fetchComments() {
 
         url = window.location.href;
@@ -162,7 +150,6 @@
                 dataType: 'json',
                 success: function (response) {
                     if (response['data'] != null) {
-
                         len = response['data'].length;
                     }
                     if (len > 0) {
@@ -194,8 +181,6 @@
                 type: 'GET',
                 dataType: 'json',
                 success: function (response) {
-                    console.log(response['data']);
-                    $('#userName').empty(); // Empty <tbody>
 
                     if (response['data'] != null) {
                         if (response['data'] != null) {
@@ -211,7 +196,7 @@
 
                                 $("#commentsnames").append("        <div id=\"containerForumWrap\">\n" +
                                     "            <div id=\"containerForumUser2\">\n" +
-                                    "                <img src=\" " +img + " \" class=\"imageUserForum\">\n" +
+                                    "                <img src=\" " + img + " \" class=\"imageUserForum\">\n" +
                                     "                <p id=\"userName\" class=\"usernameForum\">" + name + "</p>\n" +
                                     "                <p id=\"faction\" class=\"infoForum\">" + faction + "</p>\n" +
                                     "                <p id=\"realmlist\" class=\"infoForum\">" + realmList + "</p>\n" +

@@ -5,7 +5,7 @@
 @section('content')
     <div id="container3">
         <div class="container-fluid padding">
-            <div class="col-12 text-center" style="padding-bottom: 3%">
+            <div class="col-12 myHeader">
                 <h1><strong>World of Warcraft timeline: A brief history of Azeroth all the way up to Shadowlands</strong></h1>
             </div>
             <div class="col-12 align-left">

@@ -19,18 +19,31 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d94b3e62-bed5-4c44-87d8-aabcaa7fb250" name="Default Changelist" comment="vypis topicu">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/CommentsController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Article.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Comment.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_01_16_170341_create_articles_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_01_18_113333_create_comments_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/avatarDefault.png" afterDir="false" />
+    <list default="true" id="d94b3e62-bed5-4c44-87d8-aabcaa7fb250" name="Default Changelist" comment="loading commentarov">
+      <change afterPath="$PROJECT_DIR$/app/Policies/ArticlePolicy.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Policies/CommentPolicy.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Policies/UserPolicy.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/user/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/user/users.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/blog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/blog.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ArticlesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ArticlesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CommentsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CommentsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Comment.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/articles/topic.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/articles/topic.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/articles/topics.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/articles/topics.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/menu/classes.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/menu/classes.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/menu/howToStart.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/menu/howToStart.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/menu/lore.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/menu/lore.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/menu/races.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/menu/races.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/user/editProfile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/editProfile.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,6 +65,11 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpServers">
+    <servers>
+      <server host="localhost" id="3000a2f0-4d1c-44f3-977c-dd366104ce1e" name="localhost" />
+    </servers>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.4">
     <include_path>
@@ -165,6 +183,8 @@
       <path value="$PROJECT_DIR$/vendor/facade/flare-client-php" />
       <path value="$PROJECT_DIR$/vendor/psy/psysh" />
       <path value="$PROJECT_DIR$/vendor/laravel/ui" />
+      <path value="$PROJECT_DIR$/vendor/aginev/datagrid" />
+      <path value="$PROJECT_DIR$/vendor/aginev/search-filters" />
     </include_path>
   </component>
   <component name="ProjectId" id="1mKoEIresRLp89II9GEZC4zdwpf" />
@@ -223,7 +243,7 @@
       <workItem from="1610815980801" duration="10162000" />
       <workItem from="1610889704770" duration="27184000" />
       <workItem from="1610964636920" duration="12870000" />
-      <workItem from="1610977555480" duration="8137000" />
+      <workItem from="1610977555480" duration="28350000" />
     </task>
     <task id="LOCAL-00001" summary="prerabka toho isteho vol 2">
       <created>1610308299108</created>
@@ -267,7 +287,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610925647244</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="loading commentarov">
+      <created>1610987717580</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1610987717580</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -292,7 +319,8 @@
     <MESSAGE value="ajax 2.0 clean" />
     <MESSAGE value="topic text" />
     <MESSAGE value="vypis topicu" />
-    <option name="LAST_COMMIT_MESSAGE" value="vypis topicu" />
+    <MESSAGE value="loading commentarov" />
+    <option name="LAST_COMMIT_MESSAGE" value="loading commentarov" />
   </component>
   <component name="WindowStateProjectService">
     <state x="349" y="67" key="#CLI_Interpreters" timestamp="1609251824013">
@@ -331,30 +359,46 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="487" y="110" key="Github.UntrackedFilesDialog/0.0.1536.824@0.0.1536.824" timestamp="1610303134686" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1609363777618">
+    <state width="1493" height="261" key="GridCell.Tab.0.bottom" timestamp="1610988486403">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1609363777618" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1609363777618">
+    <state width="1493" height="261" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1610988486403" />
+    <state width="1493" height="261" key="GridCell.Tab.0.center" timestamp="1610988486403">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1609363777618" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1609363777618">
+    <state width="1493" height="261" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1610988486403" />
+    <state width="1493" height="261" key="GridCell.Tab.0.left" timestamp="1610988486402">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1609363777618" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1609363777618">
+    <state width="1493" height="261" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1610988486402" />
+    <state width="1493" height="261" key="GridCell.Tab.0.right" timestamp="1610988486403">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1609363777618" />
-    <state x="604" y="336" key="NewPhpFileDialog" timestamp="1610831343623">
+    <state width="1493" height="261" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1610988486403" />
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1610988486403">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="604" y="336" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1610831343623" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1610925651484">
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1610988486403" />
+    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1610988486403">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1610925651484" />
+    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1610988486403" />
+    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1610988486403">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1610988486403" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1610988486403">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1610988486403" />
+    <state x="604" y="336" key="NewPhpFileDialog" timestamp="1611001376292">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="604" y="336" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1611001376292" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1610987724912">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1610987724912" />
     <state x="668" y="289" width="478" height="347" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1610816406880">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -387,9 +431,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1610832988139" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1610983720387">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1611011383977">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1610983720387" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1611011383977" />
   </component>
 </project>

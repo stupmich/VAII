@@ -9,7 +9,7 @@
     </div>
     <form method="post" action="{{route('user.updateProfile') }} ">
         @csrf
-        <div class="form-group" style="margin-left: 5%; margin-right: 5%;margin-top: 2%;margin-bottom: 3%">
+        <div class="form-group formMargin" >
             @if(session('success'))
                 <div class="alert alert-success" role="alert">
                     {{session('success')}}

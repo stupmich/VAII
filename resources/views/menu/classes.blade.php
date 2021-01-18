@@ -5,7 +5,7 @@
 @section('content')
 <div id="container3">
     <div class="container-fluid ">
-        <div class="col-12 text-center" style="padding-bottom: 3%">
+        <div class="col-12 myHeader" style="padding-bottom: 3%">
             <h1><strong>Classes</strong></h1>
         </div>
         <div class="col-12 text-center" style="padding-bottom: 3%">

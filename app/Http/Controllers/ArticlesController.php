@@ -14,7 +14,7 @@ class ArticlesController extends Controller
 
     public function __construct()
     {
-        $this->middleware('auth');
+        //$this->middleware('auth');
     }
 
     public function create($category, $subcategory) {
@@ -52,9 +52,8 @@ class ArticlesController extends Controller
         exit;
     }
 
-    public function topic() {
-
-        return view('/articles/topic');
+    public function topic($id) {
+        return view('/articles/topic',['id' => $id]);
     }
 
     public function topicAjax($id) {

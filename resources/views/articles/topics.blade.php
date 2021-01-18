@@ -15,9 +15,11 @@
             <h5 id="subcategory" style=" margin-left: 30px;
     margin-right: 20px;
     line-height: 3.1;">{{str_replace("-"," ",$subcategory)}} </h5>
-            <a class="btn btn-primary" href="{{ route('articles.create',['category' =>$category, 'subcategory' =>$subcategory ]) }}" role="button"
-               style="border:solid; border-color: #00aeff#00aeff;align-self: start; margin-left: auto;margin-right: 30px">NEW
+            @can('create', \App\Models\Article::class)
+            <a class="btn btn-primary button" href="{{ route('articles.create',['category' =>$category, 'subcategory' =>$subcategory ]) }}" role="button"
+               style="align-self: start; margin-left: auto;margin-right: 30px">NEW
                 TOPIC</a>
+            @endcan
         </div>
 
 
