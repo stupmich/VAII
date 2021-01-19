@@ -20,8 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d94b3e62-bed5-4c44-87d8-aabcaa7fb250" name="Default Changelist" comment="final">
-      <change beforePath="$PROJECT_DIR$/.idea/blog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/forum.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ArticlesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ArticlesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/articles/topic.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/articles/topic.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/articles/topics.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/articles/topics.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -221,7 +223,7 @@
       <workItem from="1610889704770" duration="27184000" />
       <workItem from="1610964636920" duration="12870000" />
       <workItem from="1610977555480" duration="28409000" />
-      <workItem from="1611050727572" duration="14918000" />
+      <workItem from="1611050727572" duration="15910000" />
     </task>
     <task id="LOCAL-00001" summary="prerabka toho isteho vol 2">
       <created>1610308299108</created>
@@ -293,7 +295,21 @@
       <option name="project" value="LOCAL" />
       <updated>1611065574426</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="final">
+      <created>1611065993682</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1611065993682</updated>
+    </task>
+    <task id="LOCAL-00012" summary="final">
+      <created>1611066057646</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1611066057646</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -397,10 +413,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="604" y="336" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1611001376292" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1611062748340">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1611066063250">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1611062748340" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1611066063250" />
     <state x="668" y="289" width="478" height="347" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1610816406880">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

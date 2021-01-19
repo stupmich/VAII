@@ -58,7 +58,6 @@
             type: 'GET',
             dataType: 'json',
             success: function (response) {
-                console.log(response['data']);
                 var len = 0;
                 $('#userTable tbody').empty(); // Empty <tbody>
                 if (response['data'] != null) {

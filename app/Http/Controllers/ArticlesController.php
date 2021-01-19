@@ -64,7 +64,13 @@ class ArticlesController extends Controller
 
     public function topicAjax($id) {
         $article = Article::all()->where('id', $id);
-        $articleData['data'] = $article;
+
+        $articleSorted = array();
+        foreach ($article as &$art) {
+            array_push($articleSorted, $art);
+        }
+
+        $articleData['data'] = $articleSorted;
         echo json_encode($articleData);
         exit;
     }

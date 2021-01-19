@@ -80,6 +80,7 @@
         url = window.location.href;
         var id = url.split("/", 8).pop();
         var urlstr = 'http://localhost/blog/public/article/topicAjax/' + id;
+
         $.ajax(
             {
                 url: urlstr,
@@ -88,10 +89,10 @@
                 success: function (response) {
                     $('#text').empty(); // Empty <tbody>
                     $('#topic_title').empty();
-
+                    console.log(response['data']);
                     if (response['data'] != null) {
-                        var text = response['data'][id - 1].text;
-                        var topicTitle = response['data'][id - 1].title;
+                        var text = response['data'][0].text;
+                        var topicTitle = response['data'][0].title;
                         var tr_str = text;
 
                         $("#text").append(tr_str);
@@ -113,7 +114,7 @@
 
         url = window.location.href;
         var id = url.split("/", 8).pop();
-        var urlstr = 'http://localhost/forum/public/article/topicUserAjax/' + id;
+        var urlstr = 'http://localhost/blog/public/article/topicUserAjax/' + id;
         $.ajax(
             {
                 url: urlstr,
@@ -143,7 +144,7 @@
 
         url = window.location.href;
         var id = url.split("/", 8).pop();
-        var urlstr = 'http://localhost/forum/public/article/commentsAjax/' + id;
+        var urlstr = 'http://localhost/blog/public/article/commentsAjax/' + id;
 
         $.ajax(
             {
@@ -175,7 +176,7 @@
 
         url = window.location.href;
         var id = url.split("/", 8).pop();
-        var urlstr = 'http://localhost/forum/public/article/commentsUserAjax/' + id;
+        var urlstr = 'http://localhost/blog/public/article/commentsUserAjax/' + id;
 
         $.ajax(
             {
