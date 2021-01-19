@@ -4,14 +4,14 @@
 
 @section('content')
 
-    <div class="card mb-3" style="width: 60%; margin-left: 20%">
+    <div class="card mb-3 profileCard" >
         <div class="card-header">
-            <h2 style="margin-left: 2%; margin-bottom: 0">My profile</h2>
+            <h2 class="profileCardHeader">My profile</h2>
         </div>
 
         <div class="row no-gutters">
             <div class="col-md-3">
-                <img src="profDefault.png" class="card-img" alt="..." style="padding-left: 10%">
+                <img src="{{$user->avatar}}" class="card-img" alt="..." style="padding-left: 10%">
             </div>
             <div class="col-md-9">
                 <div class="card-body">

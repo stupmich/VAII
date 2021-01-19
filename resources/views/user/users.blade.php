@@ -3,9 +3,9 @@
 
 @section('content')
 
-    <div class="card mb-3" style="width: 60%; margin-left: 20%">
+    <div class="card mb-3 profileCard">
         <div class="card-header">
-            <h2 style="margin-left: 2%; margin-bottom: 0">List of users</h2>
+            <h2 class="profileCardHeader">List of users</h2>
         </div>
 
         @if(session('success'))

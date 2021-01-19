@@ -32,22 +32,22 @@
 
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
-                            <a class="navbar-brand" id="button-forum" href="{{ route('articles.index') }}" style="font-size: 1.25rem; line-height: 1.1; color:white; padding: 8px">
+                            <a class="navbar-brand" id="button-forum" href="{{ route('articles.index') }}">
                                 <img src="https://icon-library.com/images/quest-icon/quest-icon-3.jpg" width="10" height="30" class="d-inline-block " alt="" loading="lazy">
                                 FORUM
                             </a>
                         </li>
 
                         <li class="nav-item active">
-                            <a class="navbar-brand" style="font-size: 1.25rem; line-height: 1.1; color:white; padding: 8px" href="{{ route('menu.lore') }}" >
-                                <img src="https://pm1.narvii.com/6425/d2f5119049e5c1edb11fd00c91d37e27eccc1363_00.jpg" width="30" height="30" class="d-inline-block" alt="" loading="lazy">
+                            <a class="navbar-brand"  href="{{ route('menu.lore') }}" >
+                                <img src="https://pm1.narvii.com/6425/d2f5119049e5c1edb11fd00c91d37e27eccc1363_00.jpg" class="d-inline-block navbarImage" alt="" loading="lazy">
                                 LORE
                             </a>
                         </li>
 
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-size: 1.25rem; line-height: 1.1; color:white">
-                                <img src="https://www.wowisclassic.com/static/images/menu/guides.4b9da26c7b31.png" width="30" height="30" class="d-inline-block" alt="" loading="lazy">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+                                <img src="https://www.wowisclassic.com/static/images/menu/guides.4b9da26c7b31.png"  class="d-inline-block navbarImage" alt="" loading="lazy">
                                 GUIDES
                             </a>
                             <div class="dropdown-menu">

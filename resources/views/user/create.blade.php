@@ -3,9 +3,9 @@
 
 @section('content')
 
-    <div class="card mb-3" style="width: 60%; margin-left: 20%">
+    <div class="card mb-3 profileCard" >
         <div class="card-header">
-            <h2 style="margin-left: 2%; margin-bottom: 0">Edit profile</h2>
+            <h2 class="profileCardHeader">Edit profile</h2>
         </div>
 
         <div class="form-group text-danger" style="margin-left: 5%">

@@ -17,8 +17,9 @@ class Article extends Model
     protected $fillable = [
         'title',
         'text',
-        'image',
-        'username'
+        'username',
+        'category',
+        'subcategory'
     ];
 
     public function user() {

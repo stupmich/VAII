@@ -8,9 +8,7 @@
             <img
                 src="https://d1bg94bbsh66ji.cloudfront.net/en/wow/plugins/discourse-blizzard-themes/images/logos/wow/logo-small-wow.png"
                 width="50" height="50" class="d-inline-block" alt="" loading="lazy" style="margin-left: 30px">
-            <h2 id="topic_title" style="font-weight: bold;
-    margin-left: 5px;
-    line-height: 1.8;"></h2>
+            <h2 id="topic_title" class="forumHeader"></h2>
         </div>
 
         <div id="containerForumWrap">

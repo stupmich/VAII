@@ -99,6 +99,7 @@ class UserController extends Controller
     {
         $user = auth()->user();
 
+
         $user->name = $request['name'];
         $user->email = $request['email'];
         $user->about = $request['about'];

@@ -29,17 +29,6 @@
 
             </div>
 
-            <div class="row" style="margin-left: 5%; margin-right: 5%;margin-top: 2%;margin-bottom: 3%">
-                <label for="image" class="col-md-4 col-form-label">Image</label>
-
-                <input type="file" class="form-control-file" id="image" name="image">
-
-                @if ($errors->has('image'))
-                    <strong>{{ $errors->first('image') }}</strong>
-                @endif
-
-
-            </div>
             <button class="btn btn-primary" style="width: 100%">Send</button>
 
 

@@ -3,10 +3,12 @@
 
 @section('content')
 
-<div class="card mb-3" style="width: 60%; margin-left: 20%">
+<div class="card mb-3 profileCard">
     <div class="card-header">
-        <h2 style="margin-left: 2%; margin-bottom: 0">Edit profile</h2>
+        <h2 class="profileCardHeader">Edit profile</h2>
     </div>
+
+
     <form method="post" action="{{route('user.updateProfile') }} ">
         @csrf
         <div class="form-group formMargin" >
@@ -17,9 +19,6 @@
             @endif
             <label>Username</label>
             <input name="name" type="text" class="form-control" value="{{$user->name}}" required style="margin-bottom: 1%">
-
-            <label>Email address</label>
-            <input name="email" type="email" class="form-control" value="{{$user->email}}" required style="margin-bottom: 1%">
 
             <label>Faction</label>
             <select name="faction" class="select form-control" required id="faction" style="margin-bottom: 1%">

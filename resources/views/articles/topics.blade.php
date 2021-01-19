@@ -9,9 +9,7 @@
             <img
                 src="https://d1bg94bbsh66ji.cloudfront.net/en/wow/plugins/discourse-blizzard-themes/images/logos/wow/logo-small-wow.png"
                 width="50" height="50" class="d-inline-block" alt="" loading="lazy" style="margin-left: 30px">
-            <h2 id="category" style="font-weight: bold;
-    margin-left: 5px;
-    line-height: 1.8;">{{strtoupper(str_replace("-"," ",$category))}}</h2>
+            <h2 id="category" class="forumHeader">{{strtoupper(str_replace("-"," ",$category))}}</h2>
             <h5 id="subcategory" style=" margin-left: 30px;
     margin-right: 20px;
     line-height: 3.1;">{{str_replace("-"," ",$subcategory)}} </h5>
@@ -47,12 +45,16 @@
     });
 
     function fetchRecords() {
+        url = window.location.href;
+        var subcategory = url.split("/", 9).pop();
+        var urlstr = 'http://localhost/blog/public/article/topicsAjax/' + subcategory;
 
         $.ajax({
-            url: '<?php echo url('http://localhost/blog/public/article/topicsAjax')?>',
+            url: urlstr,
             type: 'GET',
             dataType: 'json',
             success: function (response) {
+                console.log(response['data']);
                 var len = 0;
                 $('#userTable tbody').empty(); // Empty <tbody>
                 if (response['data'] != null) {

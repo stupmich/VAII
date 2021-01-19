@@ -27,16 +27,15 @@ class ArticlesController extends Controller
             'text' => 'required',
             ]);
 
-        $imagePath = request('image')->store('uploads','public');
-
         $user = auth()->user();
         $name = $user->name;
 
         auth()->user()->articles()->create([
             'title' => $data['title'],
             'text' => $data['text'],
-            'image' => $imagePath,
-            'username' => $name
+            'username' => $name,
+            'category' => $category,
+            'subcategory' => $subcategory,
         ]);
         return view('/articles/topics', ['category' => $category, 'subcategory' => $subcategory]);
     }
@@ -45,10 +44,17 @@ class ArticlesController extends Controller
         return view('/articles/topics', ['category' => $category, 'subcategory' => $subcategory]);
     }
 
-    public function topicsAjax() {
-        $articles = Article::all();
-        $articleData['data'] = $articles;
+    public function topicsAjax($subcategory) {
+        $articles = Article::all()->where('subcategory',$subcategory);
+
+        $articlesSorted = array();
+        foreach ($articles as &$art) {
+            array_push($articlesSorted, $art);
+        }
+
+        $articleData['data'] = $articlesSorted;
         echo json_encode($articleData);
+
         exit;
     }
 
