@@ -19,24 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d94b3e62-bed5-4c44-87d8-aabcaa7fb250" name="Default Changelist" comment="pre final">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ArticlesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ArticlesController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Article.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Article.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Policies/UserPolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/UserPolicy.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/articles/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/articles/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/articles/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/articles/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/articles/topic.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/articles/topic.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/articles/topics.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/articles/topics.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/user/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/user/editProfile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/editProfile.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/user/profile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/profile.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/user/users.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/users.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    <list default="true" id="d94b3e62-bed5-4c44-87d8-aabcaa7fb250" name="Default Changelist" comment="final">
+      <change beforePath="$PROJECT_DIR$/.idea/blog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/forum.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -236,7 +221,7 @@
       <workItem from="1610889704770" duration="27184000" />
       <workItem from="1610964636920" duration="12870000" />
       <workItem from="1610977555480" duration="28409000" />
-      <workItem from="1611050727572" duration="11576000" />
+      <workItem from="1611050727572" duration="14918000" />
     </task>
     <task id="LOCAL-00001" summary="prerabka toho isteho vol 2">
       <created>1610308299108</created>
@@ -294,7 +279,21 @@
       <option name="project" value="LOCAL" />
       <updated>1611011887771</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="pre final2">
+      <created>1611062746324</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1611062746324</updated>
+    </task>
+    <task id="LOCAL-00010" summary="final">
+      <created>1611065574426</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1611065574426</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -321,7 +320,9 @@
     <MESSAGE value="vypis topicu" />
     <MESSAGE value="loading commentarov" />
     <MESSAGE value="pre final" />
-    <option name="LAST_COMMIT_MESSAGE" value="pre final" />
+    <MESSAGE value="pre final2" />
+    <MESSAGE value="final" />
+    <option name="LAST_COMMIT_MESSAGE" value="final" />
   </component>
   <component name="WindowStateProjectService">
     <state x="349" y="67" key="#CLI_Interpreters" timestamp="1609251824013">
@@ -396,10 +397,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="604" y="336" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1611001376292" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1611011894349">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1611062748340">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1611011894349" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1611062748340" />
     <state x="668" y="289" width="478" height="347" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1610816406880">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -432,9 +433,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1610832988139" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1611057012329">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1611065373969">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1611057012329" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1611065373969" />
   </component>
 </project>

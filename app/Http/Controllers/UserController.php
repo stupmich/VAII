@@ -121,6 +121,10 @@ class UserController extends Controller
      */
     public function destroy(Request $request,User $user)
     {
+        $articles = $user->articles();
+        $comments = $user->comments();
+        $comments->delete();
+        $articles->delete();
         $user->delete();
         $request->session()->flash('success', 'User was removed successfully.');
         return redirect()->route('user.index');

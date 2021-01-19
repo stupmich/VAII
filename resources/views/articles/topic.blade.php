@@ -1,5 +1,9 @@
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
 @extends('layouts.app')
 
 @section('content')
@@ -109,7 +113,7 @@
 
         url = window.location.href;
         var id = url.split("/", 8).pop();
-        var urlstr = 'http://localhost/blog/public/article/topicUserAjax/' + id;
+        var urlstr = 'http://localhost/forum/public/article/topicUserAjax/' + id;
         $.ajax(
             {
                 url: urlstr,
@@ -139,7 +143,7 @@
 
         url = window.location.href;
         var id = url.split("/", 8).pop();
-        var urlstr = 'http://localhost/blog/public/article/commentsAjax/' + id;
+        var urlstr = 'http://localhost/forum/public/article/commentsAjax/' + id;
 
         $.ajax(
             {
@@ -171,7 +175,7 @@
 
         url = window.location.href;
         var id = url.split("/", 8).pop();
-        var urlstr = 'http://localhost/blog/public/article/commentsUserAjax/' + id;
+        var urlstr = 'http://localhost/forum/public/article/commentsUserAjax/' + id;
 
         $.ajax(
             {

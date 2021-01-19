@@ -1,4 +1,8 @@
 <!DOCTYPE html>
+<html>
+<head>
+    <title>Title</title>
+</head>
 @extends('layouts.app')
 
 
@@ -84,5 +88,6 @@
                 <h4>Goblin</h4>
             </div>
         </div>
+    </div>
     </div>
 @endsection

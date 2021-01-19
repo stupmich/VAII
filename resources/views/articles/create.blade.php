@@ -1,3 +1,8 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Title</title>
+</head>
 @extends('layouts.app')
 
 @section('content')
@@ -16,7 +21,7 @@
                        class="form-control{{ $errors->has('title') ? ' is-invalid' : '' }}"
                        name="title"
                        value="{{ old('title') }}"
-                       autocomplete="title" autofocus>
+                >
 
                 @if ($errors->has('title'))
                     <span class="invalid-feedback" role="alert">

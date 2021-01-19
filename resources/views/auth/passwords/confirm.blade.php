@@ -1,3 +1,8 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Title</title>
+</head>
 @extends('layouts.app')
 
 @section('content')

@@ -1,4 +1,8 @@
 <!DOCTYPE html>
+<html>
+<head>
+    <title>Title</title>
+</head>
 @extends('layouts.app')
 
 @section('content')
@@ -179,7 +183,7 @@
                 </select>
 
                 <label>About</label>
-                <textarea name="about" class="form-control" value="{{old('about',@$model->about)}}" style="margin-bottom: 1%"></textarea>
+                <textarea name="about" class="form-control"  style="margin-bottom: 1%">{{old('about',@$model->about)}}</textarea>
 
                 <button type="submit" class="btn btn-primary" style="width: 100%">Create new user</button>
 
